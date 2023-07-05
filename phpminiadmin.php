@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 /*
  PHP Mini MySQL Admin
  (c) 2004-2021 Oleg Savchuk <osalabs@gmail.com> http://osalabs.com
@@ -9,16 +10,16 @@
  Dual licensed: GPL v2 and MIT, see texts at http://opensource.org/licenses/
 */
 
-$ACCESS_PWD=''; #!!!IMPORTANT!!! this is script access password, SET IT if you want to protect you DB from public access
+$ACCESS_PWD='root'; #!!!IMPORTANT!!! this is script access password, SET IT if you want to protect you DB from public access
 
 #DEFAULT db connection settings
 # --- WARNING! --- if you set defaults - it's recommended to set $ACCESS_PWD to protect your db!
 $DBDEF=array(
-'user'=>"",#required
+'user'=>"root",#required
 'pwd'=>"", #required
 #optional:
-'db'=>"",  #default DB
-'host'=>"",
+'db'=>"misutbac_db",  #default DB
+'host'=>"localhost",
 'port'=>"",
 'socket'=>"",
 'chset'=>"utf8mb4",#optional, default charset
